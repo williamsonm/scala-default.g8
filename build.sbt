@@ -9,8 +9,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
         "org.typelevel" %% "cats-core" % CatsVersion
     ),
-    addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.10.3"),
-    addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.0")
+    addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.11.0"),
+    addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1")
   )
 
 scalacOptions ++= Build.commonScalacOptions
