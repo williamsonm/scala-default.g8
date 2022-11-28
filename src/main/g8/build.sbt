@@ -5,13 +5,14 @@ val Fs2Version = "$fs2_version$"
 val Http4sVersion = "$http4s_version$"
 val LogbackVersion = "$logback_version$"
 val Specs2Version = "$specs_version$"
+val ScalaVersion = "$scala_version$"
 
 lazy val root = (project in file("."))
   .settings(
     organization := "$organization$",
     name := "$name;format="norm"$",
     version := "0.0.1-SNAPSHOT",
-    scalaVersion := "$scala_version$",
+    scalaVersion := ScalaVersion,
     libraryDependencies ++= Seq(
       "co.fs2"          %% "fs2-core"            % Fs2Version,
       "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
