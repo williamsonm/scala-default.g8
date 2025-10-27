@@ -15,10 +15,6 @@ lazy val root = (project in file("."))
     scalaVersion := ScalaVersion,
     libraryDependencies ++= Seq(
       "co.fs2"          %% "fs2-core"            % Fs2Version,
-      "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
-      "org.http4s"      %% "http4s-blaze-client" % Http4sVersion,
-      "org.http4s"      %% "http4s-circe"        % Http4sVersion,
-      "org.http4s"      %% "http4s-dsl"          % Http4sVersion,
       "org.typelevel"   %% "cats-core"           % CatsVersion,
       "org.typelevel"   %% "cats-effect"         % CatsEffectVersion,
       "io.circe"        %% "circe-generic"       % CirceVersion,
