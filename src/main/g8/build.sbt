@@ -2,8 +2,8 @@ val CatsEffectVersion = "$cats_effect_version$"
 val CatsVersion = "$cats_version$"
 val CirceVersion = "$circe_version$"
 val Fs2Version = "$fs2_version$"
-val Http4sVersion = "$http4s_version$"
 val LogbackVersion = "$logback_version$"
+val MUnitVersion = "$munit_version$"
 val Specs2Version = "$specs_version$"
 val ScalaVersion = "$scala_version$"
 
@@ -23,6 +23,7 @@ lazy val root = (project in file("."))
       "org.typelevel"   %% "cats-effect"         % CatsEffectVersion,
       "io.circe"        %% "circe-generic"       % CirceVersion,
       "org.specs2"      %% "specs2-core"         % Specs2Version % "test",
+      "org.scalameta"   %% "munit"               % MUnitVersion % Test,
       "ch.qos.logback"  %  "logback-classic"     % LogbackVersion
     )
   )
